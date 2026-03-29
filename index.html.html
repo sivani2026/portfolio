@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sivani Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body { margin:0; font-family:'Poppins',sans-serif; background:#0f172a; color:white; }
+header { text-align:center; padding:70px 20px; background:linear-gradient(135deg,#6366f1,#06b6d4); }
+header h1{font-size:2.7rem;margin:0}
+nav{display:flex;justify-content:center;background:#020617;padding:12px}
+nav a{color:white;margin:0 15px;text-decoration:none;position:relative}
+nav a::after{content:'';position:absolute;width:0;height:2px;background:cyan;left:0;bottom:-5px;transition:.3s}
+nav a:hover::after{width:100%}
+section{padding:60px 20px;max-width:1100px;margin:auto}
+h2{text-align:center;margin-bottom:40px}
+
+.card-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+.card{background:#1e293b;padding:20px;border-radius:18px;transition:.3s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-10px);box-shadow:0 10px 25px rgba(0,0,0,0.6)}
+.card h3{margin-top:10px}
+
+/* NEW: Badge style */
+.badge{display:inline-block;background:linear-gradient(135deg,#22c55e,#4ade80);color:black;padding:8px 12px;border-radius:20px;font-size:13px;margin:5px;font-weight:600}
+
+/* NEW: Goal highlight card */
+.goal-card{background:linear-gradient(135deg,#facc15,#f97316);color:black;padding:25px;border-radius:20px;text-align:center;font-weight:500;box-shadow:0 10px 30px rgba(0,0,0,0.6);transform:scale(1);transition:0.3s}
+.goal-card:hover{transform:scale(1.05)}
+
+.tag{display:inline-block;background:#06b6d4;color:black;padding:3px 8px;border-radius:8px;font-size:12px;margin:3px}
+.btn{display:inline-block;margin-top:10px;padding:8px 12px;border-radius:8px;background:#6366f1;color:white;text-decoration:none;font-size:14px}
+.btn:hover{background:#4f46e5}
+
+.fade-in{opacity:0;transform:translateY(20px);animation:fadeIn 1s forwards}
+@keyframes fadeIn{to{opacity:1;transform:translateY(0)}}
+
+footer{text-align:center;padding:20px;background:#020617}
+</style>
+</head>
+
+<body>
+<header class="fade-in">
+<h1>SIVANI SUDHAKAR N</h1>
+<p>Aspiring Web Developer | B.Tech Student</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#achievements">Achievements</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="fade-in">
+<h2>About Me</h2>
+<p>I am <strong>Sivani Sudhakar N</strong> B.Tech student from India, passionate about technology, programming, and innovation. I love building modern, responsive web applications and continuously improving my development skills. With a strong foundation in programming and problem-solving, I am on a journey to become a skilled software developer and create impactful digital solutions.</p>
+</section>
+
+<section id="skills" class="fade-in">
+<h2>Skills</h2>
+<div class="card-container">
+<div class="card"><h3>HTML</h3><p>Structure & semantic design</p></div>
+<div class="card"><h3>CSS</h3><p>Responsive UI & styling</p></div>
+<div class="card"><h3>SQL</h3><p>Basic</p></div>
+<div class="card"><h3>C++</h3><p>Strong foundation</p></div>
+<div class="card"><h3>Python</h3><p>Logic building</p></div>
+<div class="card"><h3>JavaScript</h3><p>Basic interactivity</p></div>
+<div class="card"><h3>C Programming</h3><p>Logic building</p></div>
+</div>
+</section>
+
+<section id="projects" class="fade-in">
+<h2>Projects</h2>
+<div class="card-container">
+
+<div class="card">
+<h3>🌐 Portfolio Website</h3>
+<p>Modern personal portfolio with responsive layout and animations.</p>
+<span class="tag">HTML</span><span class="tag">CSS</span>
+</div>
+
+<div class="card">
+<h3>🎞 Image Slider</h3>
+<p>Interactive slider with smooth transitions and controls.</p>
+<span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+</div>
+
+<div class="card">
+<h3>🔢 Palindrome Checker</h3>
+<p>Program to check numbers using loops and logic.</p>
+<span class="tag">C</span><span class="tag">Bash</span>
+</div>
+
+<div class="card">
+<h3>📄 Web Page Design</h3>
+<p>Clean and structured webpage using semantic HTML.</p>
+<span class="tag">HTML</span><span class="tag">CSS</span>
+</div>
+
+</div>
+</section>
+
+<section id="achievements" class="fade-in">
+<h2>Achievements</h2>
+
+<!-- BADGES -->
+<div style="text-align:center;margin-bottom:30px">
+<span class="badge"> Digital101 Certified</span>
+<span class="badge"> C Programming - Infosys</span>
+<span class="badge"> Python - Infosys</span>
+<span class="badge"> Cyber Security & Ethical Hacking</span>
+</div>
+
+<div class="card-container">
+
+<!-- GOAL HIGHLIGHT -->
+<div class="goal-card">
+<h3> GOAL</h3>
+<p> AIM TO INNOVATE,LEAD,AND CREATE TECHNOLOGY THAT IMPACTS MILLONS.</p>
+</div>
+
+</div>
+</section>
+
+<!-- CERTIFICATES SECTION -->
+<section id="certificates" class="fade-in">
+<h2>Certificates</h2>
+<p style="text-align:center;margin-bottom:20px"></p>
+<div class="card-container">
+
+<div class="card">
+<h3>Digital101 Certificate</h3>
+<img src="1.jpeg" alt="Digital101 Certificate" style="width:100%;border-radius:12px;margin-top:10px">
+<a href="1.jpeg" class="btn" target="_blank">View</a>
+</div>
+
+<div class="card">
+<h3>C Programming - Infosys</h3>
+<img src="2.jpeg" alt="C Programming Certificate" style="width:100%;border-radius:12px;margin-top:10px">
+<a href="2.jpeg" class="btn" target="_blank">View</a>
+</div>
+
+<div class="card">
+<h3>Python - Infosys</h3>
+<img src="3.jpeg" alt="Python Certificate" style="width:100%;border-radius:12px;margin-top:10px">
+<a href="3.jpeg" class="btn" target="_blank">View</a>
+</div>
+
+<div class="card">
+<h3>Cyber Security & Ethical Hacking</h3>
+<img src="4.jpeg" alt="Cyber Security Certificate" style="width:100%;border-radius:12px;margin-top:10px">
+<a href="4.jpeg" class="btn" target="_blank">View</a>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="fade-in">
+<h2>Contact</h2>
+<p>Email: sivanisudhakarn6@email.com</p>
+<p><a href="https://www.linkedin.com/in/sivani-sudhakar-n-866a9437b">LinkedIn</a> | <a href="https://github.com/sivani2026">GitHub</a></p>
+</section>
+
+<footer>
+<p>© 2026 Sivani Sudhakar</p>
+</footer>
+
+</body>
+</html>
